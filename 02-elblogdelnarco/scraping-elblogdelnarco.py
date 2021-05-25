@@ -33,12 +33,9 @@ link = articles[0].find( 'header' ).find( 'h2' ).find( 'a' )[ 'href' ]
 title = articles[0].find( 'header' ).find( 'h2' ).find( 'a' )[ 'title' ]
 date = articles[0].find( class_='thetime' ).get_text()
 
-
 # print( title ) - uncomment this line
 # print( link ) - uncomment this line
 # print( date ) - uncomment this line
-
-
 
 # extract all titles and links and put them in a list - uncomment next line
 all_titles = [ article.find( 'header' ).find( 'h2' ).find( 'a' )[ 'href' ] for article in articles]
